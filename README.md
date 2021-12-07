@@ -19,7 +19,7 @@ pip install pymaid
 - Define the direction of the graph (-d TD). TD = Top-Down, LR = Left-Right.
 
 ### Scripts
-```
+```python
 from pymaid import diagram
 from pymaid import config
 
