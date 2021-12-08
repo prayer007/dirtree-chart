@@ -1,5 +1,5 @@
-from pymaid import diagram
-from pymaid import config
+from pyMaid import diagram
+from pyMaid import config
 
 # Add files or folders to ignore list
 ignore_list = config.ignore_list.copy()
