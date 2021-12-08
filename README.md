@@ -4,7 +4,7 @@ The output will be saved in an seperate `.mmd` file or may be included in a `REA
 is to simple include it in your build tasks for generic charts in your repository.
 In the future, image output (`svg`, `png`, `pdf`, ...) will be implemented.
 
-![](https://raw.githubusercontent.com/prayer007/dirtree-chart/main/dirtree_chart/examples/example_diagram.png)
+![](https://raw.githubusercontent.com/prayer007/dirtree-chart/main/examples/example_diagram.png)
 
 ## Installation
 ```
