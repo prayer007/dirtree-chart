@@ -1,18 +1,18 @@
 ## Description
-**PyMaid** is a tiny tool for creating folder structure diagrams based on **mermaids** markdown syntax.
-The output will be saved in an seperate `.mmd` file or may be included in a `README.md`. The idea behind **pyMaid**
+**dirtree-chart** is a tiny tool for creating folder structure diagrams based on **mermaids** markdown syntax.
+The output will be saved in an seperate `.mmd` file or may be included in a `README.md`. The idea behind **dirtree-chart**
 is to simple include it in your build tasks for generic charts in your repository.
 In the future, image output (`svg`, `png`, `pdf`, ...) will be implemented.
 
-![](https://github.com/prayer007/pymaid/blob/main/examples/example_diagram.png?raw=true)
+![](https://github.com/prayer007/dirtree-chart/blob/main/examples/example_diagram.png?raw=true)
 
 ## Installation
 ```
-pip install pyMaid
+pip install dirtree-chart
 ```
 
 ## Usage and Examples
-- To get information about the tool run `python -m pyMaid -h` in the command line.
+- To get information about the tool run `python -m dirtree_chart -h` in the command line.
 - For big projects it should be considered to limit the folder depth to a suitable level (e.g. `-md 3`). 
 - Files which should not be includes may be put into the ignore list (`-il file1, file2`). At the moment no wildcard definition is supported. 
 - For git project the mermaid output markdown may be written to the `README.md` file (`-i true`). Currently only the file extention .md is supported. 
@@ -20,8 +20,8 @@ pip install pyMaid
 
 ### Scripts
 ```python
-from pyMaid import diagram
-from pyMaid import config
+from dirtree_chart import diagram
+from dirtree_chart import config
 
 # Add files or folders to ignore list
 ignore_list = config.ignore_list.copy()
@@ -32,7 +32,7 @@ diagram.DirStrucTree(ignore = ignore_list)
 ```
 ### Command line
 ```
-python -m pyMaid [-h] [-r ROOT] [-i INCLUDE_TO_README] [-d DIRECTION] [-md MAXDEPTH] [-il IGNORELIST [IGNORELIST ...]
+python -m dirtree_chart [-h] [-r ROOT] [-i INCLUDE_TO_README] [-d DIRECTION] [-md MAXDEPTH] [-il IGNORELIST [IGNORELIST ...]
 ```
 
 ## Todos

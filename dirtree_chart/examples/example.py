@@ -1,5 +1,5 @@
-from pyMaid import diagram
-from pyMaid import config
+from dirtree_chart import diagram
+from dirtree_chart import config
 
 # Add files or folders to ignore list
 ignore_list = config.ignore_list.copy()

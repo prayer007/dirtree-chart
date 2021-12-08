@@ -1,20 +1,20 @@
 from setuptools import setup, find_packages
-import pymaid
+import dirtree_chart
 
 with open('README.md') as f:
     long_description = f.read()
 
 setup(
-    name='pyMaid',
-    version=pymaid.__version__,
+    name='dirtree-chart',
+    version=dirtree_chart.__version__,
     author='Manuel Strohmaier',
     author_email='manuel.strohmaier@joanneum.at',
     description="Directory structure diagram generator",
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url="https://github.com/prayer007/pymaid",
+    url="https://github.com/prayer007/dirtree-chart",
     project_urls={
-        'Documentation': 'https://github.com/prayer007/pymaid',
+        'Documentation': 'https://github.com/prayer007/dirtree-chart',
     },
     packages=find_packages(),
     classifiers=[
