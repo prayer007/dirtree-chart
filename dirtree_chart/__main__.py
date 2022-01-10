@@ -12,7 +12,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description=description)
     
     parser.add_argument('-r', '--root', help='The root path of the folder where the diagram should start.')
-    parser.add_argument('-i','--include_to_readme', default = False, type=bool, help='If the diagramm should be included in a README.md. Currently only .md is supported. Default = True')
+    parser.add_argument('-i','--include_to_readme', default = False, type=bool, help='If the diagramm should be included in a README.md. Currently only .md is supported. Default = false')
     parser.add_argument('-d','--direction', default = "LR", help='Diagram flow. LR (Left right), TD (Top Down) and RL are supported. Default = LR')
     parser.add_argument('-md','--maxdepth', default = 4, type=int, help='Maximal folder depth. Default = 4')
     parser.add_argument('-il','--ignorelist',  nargs="+", default = [], help='List with files/folders to be ignores. Default = see config.py')
